@@ -69,5 +69,5 @@ def run(songs)
       user_command = prompt
     end
   end
-    exit_jukebox
+  exit_jukebox
 end 
