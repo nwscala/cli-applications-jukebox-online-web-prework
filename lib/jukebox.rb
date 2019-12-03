@@ -38,5 +38,7 @@ def play(songs)
   user_selection = gets.strip
   
   if (1..9).to_a.index(user_selection) != nil 
-    puts "Playing"
+    puts "Playing #{songs[user_selection - 1]}"
+  elsif songs.index(user_selection) != nil 
+    puts "Playing "
 end 
