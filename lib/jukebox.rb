@@ -40,5 +40,8 @@ def play(songs)
   if (1..9).to_a.index(user_selection) != nil 
     puts "Playing #{songs[user_selection - 1]}"
   elsif songs.index(user_selection) != nil 
-    puts "Playing "
+    puts "Playing #{user_selection}"
+  else 
+    puts "Invalid input, please try again"
+  end 
 end 
