@@ -36,4 +36,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_selection = gets.strip
+  
+  if (1..9).to_a.index(user_selection) != nil 
+    puts "Playing"
 end 
