@@ -60,10 +60,13 @@ def run(songs)
   while user_command != "exit" do 
     if user_command == "help"
       help
+      user_command = prompt
     elsif user_command == "list"
       list(songs)
+      user_command = prompt
     elsif user_command == "play"
       play(songs)
+      user_command = prompt
     end
   end
   exit_jukebox
