@@ -38,7 +38,7 @@ def play(songs)
   user_selection = gets.chomp
   
   if (1..9).to_a.index(user_selection.to_i) != nil 
-    puts "Playing #{songs[user_selection - 1]}"
+    puts "Playing #{songs[user_selection.to_i - 1]}"
   elsif songs.index(user_selection) != nil 
     puts "Playing #{user_selection}"
   else 
