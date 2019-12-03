@@ -56,7 +56,7 @@ def prompt
 end
 
 def run(songs) 
-  prompt
+  user_command = prompt
   while user_command != "exit" do 
     if user_command == "help"
       help
