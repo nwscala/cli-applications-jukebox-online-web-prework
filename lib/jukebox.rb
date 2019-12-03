@@ -53,5 +53,11 @@ end
 def run 
   puts "Please enter a command:"
   user_command = gets.strip
-  
+  exit_num = 0 
+  while exit_num == 0 do 
+    if user_command == "help"
+      help
+    elsif user_command == "list"
+      list
+  end 
 end 
